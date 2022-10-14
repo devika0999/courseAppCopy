@@ -14,10 +14,15 @@ export class ViewcourseComponent implements OnInit {
 
   }
 
+  status:boolean=false
+
   fetchData=()=>{
     this.myapi.viewCourse().subscribe(
       (data)=>{
         this.viewdata=data
+
+        this.status=true
+
 
       }
     )

@@ -1,3 +1,4 @@
+
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -13,40 +14,40 @@
                 <div class="div col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">COURSE TITLE</label>
-                    <input type="text" class="form-control">
+                    <input type="text"  class="form-control"name="courseTitle" [(ngModel)] ="courseTitle">
 
                 </div>
                 <div class="div col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">COURSE DURATION</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="courseDuration" [(ngModel)]="courseDuration">
 
 
                 </div>
                 <div class="div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="" class="form-label">COURSE DESCRIPTION</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control"name="courseDescription" [(ngModel)]="courseDescription">
 
 
                 </div>
                 <div class="div col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">VENUE</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control"name="courseVenue" [(ngModel)]="courseVenue">
 
 
                 </div>
                 <div class="div col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">DATE</label>
-                    <input type="date" class="form-control">
+                    <input type="date" class="form-control"name="courseDate" [(ngModel)]="courseDate">
 
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <button class="btn btn-success">SUBMIT</button>
+                    <button class="btn btn-success" (click)="readValues()">SUBMIT</button>
 
                 </div>
                 
