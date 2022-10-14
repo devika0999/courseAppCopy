@@ -19,6 +19,8 @@ export class AddCourseComponent implements OnInit {
   courseDate=""
   courseVenue=""
 
+  status:boolean=false
+
   readValues=()=>{
     let data={
       "courseTitle":this.courseTitle,
@@ -41,6 +43,8 @@ export class AddCourseComponent implements OnInit {
         this.courseDuration="",
         this.courseDate="",
         this.courseVenue=""
+
+        this.status=true
 
       }
     )
